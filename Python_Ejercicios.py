@@ -40,13 +40,10 @@ imc = peso / (altura ** 2)
 if (imc < 18.5):{print ("Bajo peso")}
 elif 18.5 <= imc <= 24.9:{ print ("Peso normal")}
 elif 25 <= imc <= 29.9:{ print ("Sobrepeso")}
-elif 30 <= imc <= 34.9:{ print ("Obesidad clase I")}
-elif 35 <= imc <= 39.9:{ print ("Obesidad clase II")}
-else:{print ("Obesidad clase III")}       
+else :{ print ("Obesidad")}
 #Actividad 9
 year = input("insert a year")
-if (int(year) % 4 == 0): print(f"{year} es un año bisiesto.")
-elif  (int(year) % 100 == 0):  print(f"{year} no es un año bisiesto.")
+if (int(year) % 4 == 0 and int(year)% 100 != 0): print(f"{year} es un año bisiesto.")
 elif  int(year) % 400 == 0:  print(f"{year} es un año bisiesto.")
 else :  print(f"{year} es un año bisiesto.")
 #Actividad 10
@@ -54,7 +51,3 @@ range_number = input("Inserta un numero")
 if 1 <= int(range_number)  : print("Esta en el rango del 1 al 10")
 elif int(range_number)  <= 10  : print("Esta en el rango del 1 al 10")
 else :  print("No esta")
-
-
-
-
